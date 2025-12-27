@@ -12,6 +12,13 @@ The dataset used is from the NGSIM US-101 traffic dataset.
 Bachelor's Degree in Computer Engineering  
 AI & Data Engineering Enthusiast  
 
+
+---
+
+## Academic Motivation
+This project was developed as a self-initiated academic work driven by my interest in artificial intelligence and data engineering, and in preparation for graduate-level studies in AI-related programs.
+
+
 ---
 
 ## 📥 Dataset
@@ -66,7 +73,4 @@ Visualizations include:
 - Real-time inference pipeline
 - Extension to other traffic and healthcare time-series datasets
 
----
 
-## Academic Motivation
-This project was developed as a self-initiated academic work driven by my interest in artificial intelligence and data engineering, and in preparation for graduate-level studies in AI-related programs.
