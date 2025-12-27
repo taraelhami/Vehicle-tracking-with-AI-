@@ -7,7 +7,7 @@ The dataset used is from the NGSIM US-101 traffic dataset.
 
 ---
 
-## 🧑‍💻 Author
+##  Author
 **Tara Elhami**  
 Bachelor's Degree in Computer Engineering  
 AI & Data Engineering Enthusiast  
