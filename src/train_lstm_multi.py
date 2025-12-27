@@ -24,8 +24,14 @@ model = Sequential([
 
 model.compile(optimizer='adam', loss='mse')
 model.summary()
-
-model.fit(X, y, epochs=20, batch_size=16, callbacks=[checkpoint])
+early_stopping = EarlyStopping(
+    monitor="val_loss",   # or "loss" if you don't have a validation set
+    patience=5,           # number of epochs with no improvement after which training will stop
+    verbose=1,
+    restore_best_weights=True
+)
+model.fit(X, y, epochs=20, batch_size=16, callbacks=[checkpoint, early_stopping])
 
 model.save(os.path.join(processed_dir, "lstm_model_multi"))
 print("Model saved successfully!")
+
