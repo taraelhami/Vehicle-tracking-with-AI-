@@ -13,6 +13,7 @@ from tensorflow.keras.models import load_model
 model_file = os.path.join(processed_dir, "lstm_model_multi")
 model = load_model(model_file, compile=False)
 
+# Generate predictions for the input features
 pred = model.predict(X)
 
 #  RMSE and MAE
@@ -20,4 +21,5 @@ rmse = np.sqrt(mean_squared_error(y, pred))
 mae = mean_absolute_error(y, pred)
 
 print(f"Model Evaluation:\nRMSE: {rmse:.3f}\nMAE: {mae:.3f}")
+
 
